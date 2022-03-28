@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pywordle"
+version = "0.1.0"
+description = ""
+authors = ["Tutor Exilius <tutorexilius@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+alembic = "^1.7.7"
+PySide2 = "^5.15.2"
+
+[tool.poetry.dev-dependencies]
+black = "^22.1.0"
+flake8 = "^4.0.1"
+mypy = "^0.942"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
