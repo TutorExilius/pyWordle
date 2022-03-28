@@ -8,6 +8,7 @@ authors = ["Tutor Exilius <tutorexilius@gmail.com>"]
 python = ">=3.10,<3.11"
 alembic = "^1.7.7"
 PySide2 = "^5.15.2"
+toml = "^0.10.2"
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"
