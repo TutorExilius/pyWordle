@@ -1,0 +1,3 @@
+word_list.txt: http://frequencylists.blogspot.com/2015/12/the-2000-most-frequent-german-nouns.html
+nouns.csv: https://github.com/gambolputty/german-nouns/blob/main/german_nouns/nouns.csv
+
