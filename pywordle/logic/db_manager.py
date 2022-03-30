@@ -85,14 +85,14 @@ def get_word_case_insensitive(word: str) -> Word | None:
 
 def get_random_word(beginning_letter: str | None = None) -> Word | None:
     with Session() as session:
-        if beginning_letter is None:
-            word = session.query(Word).order_by(func.random()).first()
-        else:
-            word = (
-                session.query(Word)
-                .filter(Word.word.startswith(beginning_letter))
-                .order_by(func.random())
-                .first()
-            )
+        query = session.query(Word)
+
+        if not allow_nsfw_words:
+            query = query.filter(Word.nsfw == False)
+
+        if not allow_disabled_words:
+            query = query.filter(Word.enabled == True)
+
+        word = query.order_by(func.random()).first()
 
     return word
