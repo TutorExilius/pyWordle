@@ -6,7 +6,7 @@ import toml
 
 def get_app_version() -> str:
     with open(
-            Path(globals.WORKING_DIR) / "pyproject.toml", encoding="utf8", mode="r"
+        Path(globals.WORKING_DIR) / "pyproject.toml", encoding="utf8", mode="r"
     ) as file:
         pyproject_file = toml.load(file)
 

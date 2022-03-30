@@ -1,3 +1,33 @@
+[tool.black]
+exclude = '''
+/(
+  | __pycache__
+  | view/ui
+)/
+'''
+
+[tool.mypy]
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_any_generics = true
+disallow_untyped_calls = true
+no_implicit_optional = true
+ignore_missing_imports = true
+no_site_packages = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_unreachable = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+module = "pywordle.view.*"
+allow_untyped_calls = true
+
+[[tool.mypy.overrides]]
+module = "pywordle.view.ui.*"
+allow_untyped_defs = true
+allow_untyped_calls = true
+
 [tool.poetry]
 name = "pywordle"
 version = "0.1.0"

@@ -1,9 +1,7 @@
-from __future__ import annotations
-
 from abc import ABC
 
 
-class NormalizedSet(set):
+class NormalizedSet(set[str]):
     def __init__(self, word_list: list[str]) -> None:
         super().__init__(NormalizedSet._normalized_list(word_list))
 
@@ -28,10 +26,11 @@ class NormalizedSet(set):
 
         return word_list_
 
+
 class BaseParser(ABC):
     def __init__(self) -> None:
-        self.word_list = []
+        self.word_list: list[str] = []
 
     @staticmethod
-    def get_words() -> str | None:
+    def get_words() -> NormalizedSet:
         raise NotImplementedError()

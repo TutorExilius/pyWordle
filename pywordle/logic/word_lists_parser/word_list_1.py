@@ -3,9 +3,10 @@ from pathlib import Path
 from pywordle.globals import WORKING_DIR
 from pywordle.logic.word_lists_parser.base_parser import BaseParser, NormalizedSet
 
+
 class WordList1Parser(BaseParser):
     @staticmethod
-    def get_words() -> NormalizedSet[str]:
+    def get_words() -> NormalizedSet:
         file = Path(WORKING_DIR) / "doc" / "word_lists" / "word_list_1.txt"
 
         german_nouns = []

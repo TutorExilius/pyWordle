@@ -28,27 +28,31 @@ class Word(BaseModel):
     __tablename__ = "words"
 
     word = Column(
-        String(5, collation='NOCASE'),
+        String(5, collation="NOCASE"),
         unique=True,
         nullable=False,
     )
 
-    @validates('word')
-    def validate_word(self, column, value):
+    @validates("word")
+    def validate_word(self, column: str, value: list[str]) -> list[str]:
         if len(value) != 5:
-            raise ValueError(f"Lenght error - word: '{value}'. The word length must be exact 5!")
+            raise ValueError(
+                f"Lenght error - word: '{value}'. The word length must be exact 5!"
+            )
 
         return value
 
     enabled = Column(Boolean, default=True)
     nsfw = Column(Boolean, default=False)
-    results = relationship("Result", back_populates="word", cascade="all, delete-orphan")
+    results = relationship(
+        "Result", back_populates="word", cascade="all, delete-orphan"
+    )
 
 
 class Result(BaseModel):
     __tablename__ = "results"
 
-    word_id = Column(Integer, ForeignKey('words.id', ondelete="cascade"))
+    word_id = Column(Integer, ForeignKey("words.id", ondelete="cascade"))
     word = relationship("Word", back_populates="results")
 
     guessed_in_run = Column(Integer, nullable=True, default=None)
