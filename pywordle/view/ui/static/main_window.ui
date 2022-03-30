@@ -105,6 +105,9 @@
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -139,6 +142,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -175,6 +181,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -209,6 +218,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -245,6 +257,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -279,6 +294,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -315,6 +333,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -349,6 +370,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -385,6 +409,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -419,6 +446,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -455,6 +485,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -489,6 +522,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -525,6 +561,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -559,6 +598,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -595,6 +637,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -629,6 +674,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -665,6 +713,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -699,6 +750,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -735,6 +789,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -769,6 +826,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -805,6 +865,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -839,6 +902,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -875,6 +941,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -909,6 +978,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -945,6 +1017,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -979,6 +1054,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -1015,6 +1093,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -1050,6 +1131,9 @@ border: 2px solid black;
                 <height>60</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -1084,6 +1168,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="whatsThis">
                <string>QPushButton
@@ -1128,6 +1215,9 @@ border: 2px solid black;
                 <width>60</width>
                 <height>60</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::ClickFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -1255,6 +1345,9 @@ border: 2px solid black;
                 <height>50</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -1283,6 +1376,9 @@ font-size: 20pt;
                 <width>50</width>
                 <height>50</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -1313,6 +1409,9 @@ font-size: 20pt;
                 <height>50</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -1341,6 +1440,9 @@ font-size: 20pt;
                 <width>50</width>
                 <height>50</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -1371,6 +1473,9 @@ font-size: 20pt;
                 <height>50</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -1399,6 +1504,9 @@ font-size: 20pt;
                 <width>50</width>
                 <height>50</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -1429,6 +1537,9 @@ font-size: 20pt;
                 <height>50</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -1457,6 +1568,9 @@ font-size: 20pt;
                 <width>50</width>
                 <height>50</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -1487,6 +1601,9 @@ font-size: 20pt;
                 <height>50</height>
                </size>
               </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
+              </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
 {
@@ -1515,6 +1632,9 @@ font-size: 20pt;
                 <width>50</width>
                 <height>50</height>
                </size>
+              </property>
+              <property name="focusPolicy">
+               <enum>Qt::NoFocus</enum>
               </property>
               <property name="styleSheet">
                <string notr="true">QPushButton
@@ -1598,6 +1718,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -1626,6 +1749,9 @@ font-size: 20pt;
               <width>50</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
@@ -1656,6 +1782,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -1684,6 +1813,9 @@ font-size: 20pt;
               <width>50</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
@@ -1714,6 +1846,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -1742,6 +1877,9 @@ font-size: 20pt;
               <width>50</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
@@ -1772,6 +1910,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -1801,6 +1942,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -1829,6 +1973,9 @@ font-size: 20pt;
               <width>50</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
@@ -1907,6 +2054,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -1935,6 +2085,9 @@ font-size: 20pt;
               <width>50</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
@@ -1965,6 +2118,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -1993,6 +2149,9 @@ font-size: 20pt;
               <width>50</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
@@ -2023,6 +2182,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -2052,6 +2214,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -2080,6 +2245,9 @@ font-size: 20pt;
               <width>50</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
@@ -2161,6 +2329,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -2189,6 +2360,9 @@ font-size: 20pt;
               <width>50</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
@@ -2219,6 +2393,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -2247,6 +2424,9 @@ font-size: 20pt;
               <width>50</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
@@ -2277,6 +2457,9 @@ font-size: 20pt;
               <height>50</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
 {
@@ -2305,6 +2488,9 @@ font-size: 20pt;
               <width>100</width>
               <height>50</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
             </property>
             <property name="styleSheet">
              <string notr="true">QPushButton
@@ -2412,6 +2598,70 @@ font-size: 20pt;
    </property>
   </action>
  </widget>
+ <tabstops>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>pushButton_9</tabstop>
+  <tabstop>pushButton_10</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_11</tabstop>
+  <tabstop>pushButton_12</tabstop>
+  <tabstop>pushButton_13</tabstop>
+  <tabstop>pushButton_14</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_15</tabstop>
+  <tabstop>pushButton_16</tabstop>
+  <tabstop>pushButton_17</tabstop>
+  <tabstop>pushButton_18</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton_19</tabstop>
+  <tabstop>pushButton_20</tabstop>
+  <tabstop>pushButton_21</tabstop>
+  <tabstop>pushButton_22</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>pushButton_23</tabstop>
+  <tabstop>pushButton_24</tabstop>
+  <tabstop>pushButton_25</tabstop>
+  <tabstop>pushButton_26</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton_27</tabstop>
+  <tabstop>pushButton_28</tabstop>
+  <tabstop>pushButton_29</tabstop>
+  <tabstop>pushButton_30</tabstop>
+  <tabstop>pushButton_Q</tabstop>
+  <tabstop>pushButton_W</tabstop>
+  <tabstop>pushButton_E</tabstop>
+  <tabstop>pushButton_R</tabstop>
+  <tabstop>pushButton_T</tabstop>
+  <tabstop>pushButton_Z</tabstop>
+  <tabstop>pushButton_U</tabstop>
+  <tabstop>pushButton_I</tabstop>
+  <tabstop>pushButton_O</tabstop>
+  <tabstop>pushButton_P</tabstop>
+  <tabstop>pushButton_A</tabstop>
+  <tabstop>pushButton_S</tabstop>
+  <tabstop>pushButton_D</tabstop>
+  <tabstop>pushButton_F</tabstop>
+  <tabstop>pushButton_G</tabstop>
+  <tabstop>pushButton_H</tabstop>
+  <tabstop>pushButton_J</tabstop>
+  <tabstop>pushButton_K</tabstop>
+  <tabstop>pushButton_L</tabstop>
+  <tabstop>pushButton_Y</tabstop>
+  <tabstop>pushButton_X</tabstop>
+  <tabstop>pushButton_C</tabstop>
+  <tabstop>pushButton_V</tabstop>
+  <tabstop>pushButton_B</tabstop>
+  <tabstop>pushButton_N</tabstop>
+  <tabstop>pushButton_M</tabstop>
+  <tabstop>pushButton_SEND</tabstop>
+  <tabstop>pushButton_UE</tabstop>
+  <tabstop>pushButton_OE</tabstop>
+  <tabstop>pushButton_AE</tabstop>
+  <tabstop>pushButton_SS</tabstop>
+  <tabstop>pushButton_DEL</tabstop>
+ </tabstops>
  <resources/>
  <connections>
   <connection>
