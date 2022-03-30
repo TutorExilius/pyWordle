@@ -1,8 +1,8 @@
 """create_words_and_results_tables
 
-Revision ID: 5d80ba97f74b
+Revision ID: 71d46639309e
 Revises: 
-Create Date: 2022-03-28 17:02:04.887145
+Create Date: 2022-03-29 15:45:02.382574
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '5d80ba97f74b'
+revision = '71d46639309e'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -21,7 +21,7 @@ def upgrade():
     op.create_table('words',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('created_at', sa.DateTime(), nullable=True),
-    sa.Column('word', sa.String(length=5), nullable=False),
+    sa.Column('word', sa.String(length=5, collation='NOCASE'), nullable=False),
     sa.Column('enabled', sa.Boolean(), nullable=True),
     sa.Column('nsfw', sa.Boolean(), nullable=True),
     sa.PrimaryKeyConstraint('id', name=op.f('pk_words')),
