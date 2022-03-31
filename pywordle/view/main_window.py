@@ -7,7 +7,9 @@ from functools import partial
 from PySide2.QtWidgets import QMainWindow, QMessageBox, QPushButton, QWidget
 
 from pywordle.logic import db_manager
+from pywordle.logic.helper import get_app_version
 from pywordle.model.models import Word
+from pywordle.my_globals import WORKING_DIR
 from pywordle.view.ui.ui_main_window import Ui_MainWindow
 
 
@@ -26,6 +28,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent: QWidget = None):
         super().__init__(parent)
         self.setupUi(self)
+        self.setWindowTitle(
+            f"{self.windowTitle()} v{get_app_version(working_dir=WORKING_DIR)}"
+        )
 
         self.random_word: None | Word = db_manager.get_random_word()
 
@@ -48,6 +53,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self._current_field = self._get_first_or_selected_input_field()
 
         # connections
+        self.actionAbout_Qt.triggered.connect(  # pylint: disable=no-member
+            lambda *args, **kwargs: QMessageBox.aboutQt(self)
+        )
+
         for frame in self._input_rows.values():
             for child in frame.children():
                 if isinstance(child, QPushButton):
