@@ -114,6 +114,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             GueissingPositionState.DOES_NOT_EXIST: "#a0a0a0",  # gray
         }
 
+        guessed_letters = {}
+
         for i, field in enumerate(input_fields):
             guessing_state = result_list[i]
             new_style_sheet = (
@@ -128,6 +130,38 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 )
             )
             field.setStyleSheet(new_style_sheet)
+            guessed_letters[field.text()] = (colors[guessing_state], guessing_state)
+
+        for child in self.frame_inputs.children():
+            if isinstance(child, QPushButton):
+                letter = child.text()
+
+                if letter in guessed_letters:
+                    color = guessed_letters[letter][0]
+                    state = guessed_letters[letter][1]
+
+                    if state != GueissingPositionState.CORRECT_POSITION:
+                        child.setStyleSheet(
+                            child.styleSheet().replace(
+                                "background-color: #d0d0d0",
+                                f"background-color: {color}",
+                            )
+                        )
+                    else:
+                        child.setStyleSheet(
+                            child.styleSheet().replace(
+                                "background-color: #d0d0d0",
+                                f"background-color: {color}",
+                            )
+                        )
+
+                        # if already yellow, override color to green
+                        child.setStyleSheet(
+                            child.styleSheet().replace(
+                                f"background-color: {colors[state]}",
+                                f"background-color: {color}",
+                            )
+                        )
 
     def _delete_and_update_field(self) -> None:
         """Clean current focused field and focus field before."""
@@ -138,7 +172,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             )
 
         self._current_field.setText("")
-        # self._select_next_input_field(use_reversed=True)
 
     def _update_current_field(self) -> None:
         """Is updating the current field."""
