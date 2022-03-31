@@ -18,3 +18,7 @@ Please adjust after every version change!
 | Database Version  | App Version |
 | :---: | :---: |
 | v0.X  | v0.X - current version (v0.1.0) |
+
+## UI-Files
+### Convert UI in Python:
+Example: `pyside2-uic .\static\main_window.ui > ui_main_window.py`
