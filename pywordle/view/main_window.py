@@ -318,8 +318,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def _game_lost(self) -> None:
         """Show game lost dialog."""
 
+        random_word = self.random_word.word if self.random_word else ""
+
         msg_box = QMessageBox(self)
-        msg_box.setText("You loose :(")
+        msg_box.setText(f"You loose :(<br>The searched word was: <br>{random_word}")
         msg_box.setWindowTitle("Game Over")
         msg_box.exec_()
 
