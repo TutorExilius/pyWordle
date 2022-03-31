@@ -78,7 +78,6 @@ def add_word_list(word_list: List[str]) -> None:
 
     chunks = chunked(words, bulk_size)
 
-    print(len(words))
     with Session() as session:
         for chunk in chunks:
             session.bulk_save_objects(chunk, return_defaults=False)

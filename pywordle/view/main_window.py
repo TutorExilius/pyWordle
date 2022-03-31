@@ -1,6 +1,8 @@
 """The main window widget"""
+from __future__ import annotations
 
 import re
+from collections import defaultdict
 from enum import IntEnum
 from functools import partial
 
@@ -37,7 +39,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if self.random_word is None:
             raise ValueError("No word in database found.")
 
-        print("Random word:", self.random_word.word)
+        # print("Random word:", self.random_word.word)
 
         self._current_run = 1
         self._input_rows = {
@@ -88,7 +90,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         if db_manager.exist(word):
             result_list = self.validate_guessing(word)
-            self._colorize_input_row(result_list)
+            self._colorize_fields(result_list)
             all_correct = all(
                 result == GueissingPositionState.CORRECT_POSITION
                 for result in result_list
@@ -97,11 +99,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self._select_next_input_row(all_correct)
         else:
             self._not_a_word()
-            print("not a word")
 
-    def _colorize_input_row(self, result_list: list[GueissingPositionState]) -> None:
-        """Colorize input row (QFrame) field by filed (QPushButton) by using
-        given result_list.
+    def _colorize_fields(self, result_list: list[GueissingPositionState]) -> None:
+        """Colorize fields like QPushButtons in input rows (QFrame) and
+        input field in keyborad (letters)by using given result_list.
 
         :param result_list: A list of Guess States
         :type result_list: list[GueissingPositionState]
@@ -114,7 +115,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             GueissingPositionState.DOES_NOT_EXIST: "#a0a0a0",  # gray
         }
 
-        guessed_letters = {}
+        guessed_letters = defaultdict(list)
 
         for i, field in enumerate(input_fields):
             guessing_state = result_list[i]
@@ -130,38 +131,70 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 )
             )
             field.setStyleSheet(new_style_sheet)
-            guessed_letters[field.text()] = (colors[guessing_state], guessing_state)
+            guessed_letters[field.text()].append(
+                (colors[guessing_state], guessing_state)
+            )
+
+        reduced_guessed_letters = MainWindow._reduce_guessing_states(guessed_letters)
+        yellow = colors[GueissingPositionState.EXIST_ON_OTHER_POSITION]
 
         for child in self.frame_inputs.children():
             if isinstance(child, QPushButton):
                 letter = child.text()
 
-                if letter in guessed_letters:
-                    color = guessed_letters[letter][0]
-                    state = guessed_letters[letter][1]
+                if letter in reduced_guessed_letters:
+                    color = reduced_guessed_letters[letter][0]
+                    state = reduced_guessed_letters[letter][1]
 
                     if state != GueissingPositionState.CORRECT_POSITION:
                         child.setStyleSheet(
-                            child.styleSheet().replace(
+                            child.styleSheet()
+                            .replace(
                                 "background-color: #d0d0d0",
+                                f"background-color: {color}",
+                            )
+                            .replace(  # if already yellow, override color to green
+                                f"background-color: {yellow}",
                                 f"background-color: {color}",
                             )
                         )
                     else:
                         child.setStyleSheet(
-                            child.styleSheet().replace(
+                            child.styleSheet()
+                            .replace(
                                 "background-color: #d0d0d0",
+                                f"background-color: {color}",
+                            )
+                            .replace(  # if already yellow, override color to green
+                                f"background-color: {yellow}",
                                 f"background-color: {color}",
                             )
                         )
 
-                        # if already yellow, override color to green
-                        child.setStyleSheet(
-                            child.styleSheet().replace(
-                                f"background-color: {colors[state]}",
-                                f"background-color: {color}",
-                            )
-                        )
+    @staticmethod
+    def _reduce_guessing_states(
+        guessing_states: dict[str, list[tuple[str, GueissingPositionState]]]
+    ) -> dict[str, tuple[str, GueissingPositionState]]:
+        """Remove lower prioritized guessing states for each key (input letter).
+
+        :param guessing_states: A list of color-guessingstat pairs (tuple) grouped by
+            input letter (key)
+        :type guessing_states: dict[str, list[tuple[str, GueissingPositionState]]]
+        :return Reduces list of color-guessing states key-values (tuple groupeyd by
+            input letter (key)
+        :rtype dict[str, tuple[str, GueissingPositionState]]
+        """
+
+        reduced_guessing_states = {}
+
+        for letter, color_states in guessing_states.items():
+            sorted_color_states = sorted(
+                color_states, key=lambda color_state: color_state[1].value
+            )
+
+            reduced_guessing_states[letter] = sorted_color_states[0]
+
+        return reduced_guessing_states
 
     def _delete_and_update_field(self) -> None:
         """Clean current focused field and focus field before."""
@@ -340,6 +373,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 zip(random_word, word),
             )
         )
+
         # convert bool to GueissingPositionState
         guessed_positions_states = [
             GueissingPositionState(int(guessed_position))
