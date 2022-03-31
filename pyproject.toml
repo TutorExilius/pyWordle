@@ -21,6 +21,7 @@ strict_equality = true
 
 [[tool.mypy.overrides]]
 module = "pywordle.view.*"
+allow_untyped_defs = true
 allow_untyped_calls = true
 
 [[tool.mypy.overrides]]
@@ -30,8 +31,8 @@ allow_untyped_calls = true
 
 [tool.poetry]
 name = "pywordle"
-version = "0.1.0"
-description = ""
+version = "1.0.0"
+description = "A wordle clone in Python Qt"
 authors = ["Tutor Exilius <tutorexilius@gmail.com>"]
 
 [tool.poetry.dependencies]
@@ -48,6 +49,7 @@ flake8 = "^4.0.1"
 mypy = "^0.942"
 pylint = "^2.13.3"
 isort = "^5.10.1"
+pytest = "^7.1.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
