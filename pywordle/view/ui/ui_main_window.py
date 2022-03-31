@@ -17,7 +17,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(658, 791)
+        MainWindow.resize(658, 779)
         MainWindow.setStyleSheet(u"background-color: white;")
         self.action_Close = QAction(MainWindow)
         self.action_Close.setObjectName(u"action_Close")
@@ -61,7 +61,7 @@ class Ui_MainWindow(object):
         self.pushButton_1_4.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_1_4.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -70,7 +70,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -83,7 +83,7 @@ class Ui_MainWindow(object):
         self.pushButton_1_5.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_1_5.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -92,7 +92,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -105,7 +105,7 @@ class Ui_MainWindow(object):
         self.pushButton_1_1.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_1_1.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -114,7 +114,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -127,7 +127,7 @@ class Ui_MainWindow(object):
         self.pushButton_1_2.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_1_2.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -136,7 +136,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -149,7 +149,7 @@ class Ui_MainWindow(object):
         self.pushButton_1_3.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_1_3.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -158,7 +158,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -182,7 +182,7 @@ class Ui_MainWindow(object):
         self.pushButton_2_3.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_2_3.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -191,7 +191,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -204,7 +204,7 @@ class Ui_MainWindow(object):
         self.pushButton_2_4.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_2_4.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -213,7 +213,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -226,7 +226,7 @@ class Ui_MainWindow(object):
         self.pushButton_2_1.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_2_1.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -235,7 +235,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -248,7 +248,7 @@ class Ui_MainWindow(object):
         self.pushButton_2_5.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_2_5.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -257,7 +257,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -270,7 +270,7 @@ class Ui_MainWindow(object):
         self.pushButton_2_2.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_2_2.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -279,7 +279,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -303,7 +303,7 @@ class Ui_MainWindow(object):
         self.pushButton_3_1.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_3_1.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -312,7 +312,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -325,7 +325,7 @@ class Ui_MainWindow(object):
         self.pushButton_3_2.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_3_2.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -334,7 +334,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -347,7 +347,7 @@ class Ui_MainWindow(object):
         self.pushButton_3_3.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_3_3.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -356,7 +356,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -369,7 +369,7 @@ class Ui_MainWindow(object):
         self.pushButton_3_4.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_3_4.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -378,7 +378,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -391,7 +391,7 @@ class Ui_MainWindow(object):
         self.pushButton_3_5.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_3_5.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -400,7 +400,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -424,7 +424,7 @@ class Ui_MainWindow(object):
         self.pushButton_4_4.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_4_4.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -433,7 +433,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -446,7 +446,7 @@ class Ui_MainWindow(object):
         self.pushButton_4_3.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_4_3.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -455,7 +455,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -468,7 +468,7 @@ class Ui_MainWindow(object):
         self.pushButton_4_1.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_4_1.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -477,7 +477,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -490,7 +490,7 @@ class Ui_MainWindow(object):
         self.pushButton_4_2.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_4_2.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -499,7 +499,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -512,7 +512,7 @@ class Ui_MainWindow(object):
         self.pushButton_4_5.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_4_5.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -521,7 +521,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -545,7 +545,7 @@ class Ui_MainWindow(object):
         self.pushButton_5_3.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_5_3.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -554,7 +554,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -567,7 +567,7 @@ class Ui_MainWindow(object):
         self.pushButton_5_4.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_5_4.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -576,7 +576,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -589,7 +589,7 @@ class Ui_MainWindow(object):
         self.pushButton_5_1.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_5_1.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -598,7 +598,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -611,7 +611,7 @@ class Ui_MainWindow(object):
         self.pushButton_5_5.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_5_5.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -620,7 +620,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -633,7 +633,7 @@ class Ui_MainWindow(object):
         self.pushButton_5_2.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_5_2.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -642,7 +642,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -666,7 +666,7 @@ class Ui_MainWindow(object):
         self.pushButton_6_1.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_6_1.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -675,7 +675,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -688,7 +688,7 @@ class Ui_MainWindow(object):
         self.pushButton_6_5.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_6_5.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -697,7 +697,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -710,7 +710,7 @@ class Ui_MainWindow(object):
         self.pushButton_6_4.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_6_4.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -719,7 +719,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -732,7 +732,7 @@ class Ui_MainWindow(object):
         self.pushButton_6_3.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_6_3.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -741,7 +741,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -754,7 +754,7 @@ class Ui_MainWindow(object):
         self.pushButton_6_2.setFocusPolicy(Qt.ClickFocus)
         self.pushButton_6_2.setStyleSheet(u"QPushButton\n"
 "{\n"
-"background-color: #fdfdfd;\n"
+"background-color: white;\n"
 "color: black;\n"
 "border: 1px solid black;\n"
 "border-radius: 6px;\n"
@@ -763,7 +763,7 @@ class Ui_MainWindow(object):
 "\n"
 "QPushButton:focus\n"
 "{\n"
-" background-color: white;\n"
+"background-color: white;\n"
 "border: 2px solid black;\n"
 "}")
 
@@ -788,7 +788,9 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
 
-        self.horizontalLayout = QHBoxLayout()
+        self.frame_inputs = QFrame(self.centralwidget)
+        self.frame_inputs.setObjectName(u"frame_inputs")
+        self.horizontalLayout = QHBoxLayout(self.frame_inputs)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalSpacer_4 = QSpacerItem(0, 0, QSizePolicy.MinimumExpanding, QSizePolicy.Minimum)
 
@@ -809,7 +811,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addItem(self.horizontalSpacer_7)
 
-        self.pushButton_Q = QPushButton(self.centralwidget)
+        self.pushButton_Q = QPushButton(self.frame_inputs)
         self.pushButton_Q.setObjectName(u"pushButton_Q")
         self.pushButton_Q.setMinimumSize(QSize(50, 50))
         self.pushButton_Q.setMaximumSize(QSize(50, 50))
@@ -825,7 +827,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_Q)
 
-        self.pushButton_W = QPushButton(self.centralwidget)
+        self.pushButton_W = QPushButton(self.frame_inputs)
         self.pushButton_W.setObjectName(u"pushButton_W")
         self.pushButton_W.setMinimumSize(QSize(50, 50))
         self.pushButton_W.setMaximumSize(QSize(50, 50))
@@ -841,7 +843,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_W)
 
-        self.pushButton_E = QPushButton(self.centralwidget)
+        self.pushButton_E = QPushButton(self.frame_inputs)
         self.pushButton_E.setObjectName(u"pushButton_E")
         self.pushButton_E.setMinimumSize(QSize(50, 50))
         self.pushButton_E.setMaximumSize(QSize(50, 50))
@@ -857,7 +859,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_E)
 
-        self.pushButton_R = QPushButton(self.centralwidget)
+        self.pushButton_R = QPushButton(self.frame_inputs)
         self.pushButton_R.setObjectName(u"pushButton_R")
         self.pushButton_R.setMinimumSize(QSize(50, 50))
         self.pushButton_R.setMaximumSize(QSize(50, 50))
@@ -873,7 +875,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_R)
 
-        self.pushButton_T = QPushButton(self.centralwidget)
+        self.pushButton_T = QPushButton(self.frame_inputs)
         self.pushButton_T.setObjectName(u"pushButton_T")
         self.pushButton_T.setMinimumSize(QSize(50, 50))
         self.pushButton_T.setMaximumSize(QSize(50, 50))
@@ -889,7 +891,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_T)
 
-        self.pushButton_Z = QPushButton(self.centralwidget)
+        self.pushButton_Z = QPushButton(self.frame_inputs)
         self.pushButton_Z.setObjectName(u"pushButton_Z")
         self.pushButton_Z.setMinimumSize(QSize(50, 50))
         self.pushButton_Z.setMaximumSize(QSize(50, 50))
@@ -905,7 +907,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_Z)
 
-        self.pushButton_U = QPushButton(self.centralwidget)
+        self.pushButton_U = QPushButton(self.frame_inputs)
         self.pushButton_U.setObjectName(u"pushButton_U")
         self.pushButton_U.setMinimumSize(QSize(50, 50))
         self.pushButton_U.setMaximumSize(QSize(50, 50))
@@ -921,7 +923,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_U)
 
-        self.pushButton_I = QPushButton(self.centralwidget)
+        self.pushButton_I = QPushButton(self.frame_inputs)
         self.pushButton_I.setObjectName(u"pushButton_I")
         self.pushButton_I.setMinimumSize(QSize(50, 50))
         self.pushButton_I.setMaximumSize(QSize(50, 50))
@@ -937,7 +939,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_I)
 
-        self.pushButton_O = QPushButton(self.centralwidget)
+        self.pushButton_O = QPushButton(self.frame_inputs)
         self.pushButton_O.setObjectName(u"pushButton_O")
         self.pushButton_O.setMinimumSize(QSize(50, 50))
         self.pushButton_O.setMaximumSize(QSize(50, 50))
@@ -953,7 +955,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_O)
 
-        self.pushButton_P = QPushButton(self.centralwidget)
+        self.pushButton_P = QPushButton(self.frame_inputs)
         self.pushButton_P.setObjectName(u"pushButton_P")
         self.pushButton_P.setMinimumSize(QSize(50, 50))
         self.pushButton_P.setMaximumSize(QSize(50, 50))
@@ -987,7 +989,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addItem(self.horizontalSpacer_5)
 
-        self.pushButton_A = QPushButton(self.centralwidget)
+        self.pushButton_A = QPushButton(self.frame_inputs)
         self.pushButton_A.setObjectName(u"pushButton_A")
         self.pushButton_A.setMinimumSize(QSize(50, 50))
         self.pushButton_A.setMaximumSize(QSize(50, 50))
@@ -1003,7 +1005,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.pushButton_A)
 
-        self.pushButton_S = QPushButton(self.centralwidget)
+        self.pushButton_S = QPushButton(self.frame_inputs)
         self.pushButton_S.setObjectName(u"pushButton_S")
         self.pushButton_S.setMinimumSize(QSize(50, 50))
         self.pushButton_S.setMaximumSize(QSize(50, 50))
@@ -1019,7 +1021,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.pushButton_S)
 
-        self.pushButton_D = QPushButton(self.centralwidget)
+        self.pushButton_D = QPushButton(self.frame_inputs)
         self.pushButton_D.setObjectName(u"pushButton_D")
         self.pushButton_D.setMinimumSize(QSize(50, 50))
         self.pushButton_D.setMaximumSize(QSize(50, 50))
@@ -1035,7 +1037,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.pushButton_D)
 
-        self.pushButton_F = QPushButton(self.centralwidget)
+        self.pushButton_F = QPushButton(self.frame_inputs)
         self.pushButton_F.setObjectName(u"pushButton_F")
         self.pushButton_F.setMinimumSize(QSize(50, 50))
         self.pushButton_F.setMaximumSize(QSize(50, 50))
@@ -1051,7 +1053,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.pushButton_F)
 
-        self.pushButton_G = QPushButton(self.centralwidget)
+        self.pushButton_G = QPushButton(self.frame_inputs)
         self.pushButton_G.setObjectName(u"pushButton_G")
         self.pushButton_G.setMinimumSize(QSize(50, 50))
         self.pushButton_G.setMaximumSize(QSize(50, 50))
@@ -1067,7 +1069,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.pushButton_G)
 
-        self.pushButton_H = QPushButton(self.centralwidget)
+        self.pushButton_H = QPushButton(self.frame_inputs)
         self.pushButton_H.setObjectName(u"pushButton_H")
         self.pushButton_H.setMinimumSize(QSize(50, 50))
         self.pushButton_H.setMaximumSize(QSize(50, 50))
@@ -1083,7 +1085,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.pushButton_H)
 
-        self.pushButton_J = QPushButton(self.centralwidget)
+        self.pushButton_J = QPushButton(self.frame_inputs)
         self.pushButton_J.setObjectName(u"pushButton_J")
         self.pushButton_J.setMinimumSize(QSize(50, 50))
         self.pushButton_J.setMaximumSize(QSize(50, 50))
@@ -1099,7 +1101,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.pushButton_J)
 
-        self.pushButton_K = QPushButton(self.centralwidget)
+        self.pushButton_K = QPushButton(self.frame_inputs)
         self.pushButton_K.setObjectName(u"pushButton_K")
         self.pushButton_K.setMinimumSize(QSize(50, 50))
         self.pushButton_K.setMaximumSize(QSize(50, 50))
@@ -1115,7 +1117,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.pushButton_K)
 
-        self.pushButton_L = QPushButton(self.centralwidget)
+        self.pushButton_L = QPushButton(self.frame_inputs)
         self.pushButton_L.setObjectName(u"pushButton_L")
         self.pushButton_L.setMinimumSize(QSize(50, 50))
         self.pushButton_L.setMaximumSize(QSize(50, 50))
@@ -1146,7 +1148,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addItem(self.horizontalSpacer_9)
 
-        self.pushButton_Y = QPushButton(self.centralwidget)
+        self.pushButton_Y = QPushButton(self.frame_inputs)
         self.pushButton_Y.setObjectName(u"pushButton_Y")
         self.pushButton_Y.setMinimumSize(QSize(50, 50))
         self.pushButton_Y.setMaximumSize(QSize(50, 50))
@@ -1162,7 +1164,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.pushButton_Y)
 
-        self.pushButton_X = QPushButton(self.centralwidget)
+        self.pushButton_X = QPushButton(self.frame_inputs)
         self.pushButton_X.setObjectName(u"pushButton_X")
         self.pushButton_X.setMinimumSize(QSize(50, 50))
         self.pushButton_X.setMaximumSize(QSize(50, 50))
@@ -1178,7 +1180,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.pushButton_X)
 
-        self.pushButton_C = QPushButton(self.centralwidget)
+        self.pushButton_C = QPushButton(self.frame_inputs)
         self.pushButton_C.setObjectName(u"pushButton_C")
         self.pushButton_C.setMinimumSize(QSize(50, 50))
         self.pushButton_C.setMaximumSize(QSize(50, 50))
@@ -1194,7 +1196,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.pushButton_C)
 
-        self.pushButton_V = QPushButton(self.centralwidget)
+        self.pushButton_V = QPushButton(self.frame_inputs)
         self.pushButton_V.setObjectName(u"pushButton_V")
         self.pushButton_V.setMinimumSize(QSize(50, 50))
         self.pushButton_V.setMaximumSize(QSize(50, 50))
@@ -1210,7 +1212,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.pushButton_V)
 
-        self.pushButton_B = QPushButton(self.centralwidget)
+        self.pushButton_B = QPushButton(self.frame_inputs)
         self.pushButton_B.setObjectName(u"pushButton_B")
         self.pushButton_B.setMinimumSize(QSize(50, 50))
         self.pushButton_B.setMaximumSize(QSize(50, 50))
@@ -1226,7 +1228,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.pushButton_B)
 
-        self.pushButton_N = QPushButton(self.centralwidget)
+        self.pushButton_N = QPushButton(self.frame_inputs)
         self.pushButton_N.setObjectName(u"pushButton_N")
         self.pushButton_N.setMinimumSize(QSize(50, 50))
         self.pushButton_N.setMaximumSize(QSize(50, 50))
@@ -1242,7 +1244,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.pushButton_N)
 
-        self.pushButton_M = QPushButton(self.centralwidget)
+        self.pushButton_M = QPushButton(self.frame_inputs)
         self.pushButton_M.setObjectName(u"pushButton_M")
         self.pushButton_M.setMinimumSize(QSize(50, 50))
         self.pushButton_M.setMaximumSize(QSize(50, 50))
@@ -1273,7 +1275,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addItem(self.horizontalSpacer_12)
 
-        self.pushButton_SEND = QPushButton(self.centralwidget)
+        self.pushButton_SEND = QPushButton(self.frame_inputs)
         self.pushButton_SEND.setObjectName(u"pushButton_SEND")
         self.pushButton_SEND.setMinimumSize(QSize(100, 50))
         self.pushButton_SEND.setSizeIncrement(QSize(100, 50))
@@ -1289,7 +1291,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.pushButton_SEND)
 
-        self.pushButton_UE = QPushButton(self.centralwidget)
+        self.pushButton_UE = QPushButton(self.frame_inputs)
         self.pushButton_UE.setObjectName(u"pushButton_UE")
         self.pushButton_UE.setMinimumSize(QSize(50, 50))
         self.pushButton_UE.setMaximumSize(QSize(50, 50))
@@ -1305,7 +1307,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.pushButton_UE)
 
-        self.pushButton_OE = QPushButton(self.centralwidget)
+        self.pushButton_OE = QPushButton(self.frame_inputs)
         self.pushButton_OE.setObjectName(u"pushButton_OE")
         self.pushButton_OE.setMinimumSize(QSize(50, 50))
         self.pushButton_OE.setMaximumSize(QSize(50, 50))
@@ -1321,7 +1323,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.pushButton_OE)
 
-        self.pushButton_AE = QPushButton(self.centralwidget)
+        self.pushButton_AE = QPushButton(self.frame_inputs)
         self.pushButton_AE.setObjectName(u"pushButton_AE")
         self.pushButton_AE.setMinimumSize(QSize(50, 50))
         self.pushButton_AE.setMaximumSize(QSize(50, 50))
@@ -1337,7 +1339,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.pushButton_AE)
 
-        self.pushButton_SS = QPushButton(self.centralwidget)
+        self.pushButton_SS = QPushButton(self.frame_inputs)
         self.pushButton_SS.setObjectName(u"pushButton_SS")
         self.pushButton_SS.setMinimumSize(QSize(50, 50))
         self.pushButton_SS.setMaximumSize(QSize(50, 50))
@@ -1353,7 +1355,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.pushButton_SS)
 
-        self.pushButton_DEL = QPushButton(self.centralwidget)
+        self.pushButton_DEL = QPushButton(self.frame_inputs)
         self.pushButton_DEL.setObjectName(u"pushButton_DEL")
         self.pushButton_DEL.setMinimumSize(QSize(100, 50))
         self.pushButton_DEL.setSizeIncrement(QSize(100, 50))
@@ -1384,7 +1386,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addItem(self.horizontalSpacer_2)
 
 
-        self.verticalLayout_2.addLayout(self.horizontalLayout)
+        self.verticalLayout_2.addWidget(self.frame_inputs)
 
         self.verticalSpacer_2 = QSpacerItem(0, 0, QSizePolicy.Minimum, QSizePolicy.MinimumExpanding)
 

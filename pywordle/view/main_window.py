@@ -4,7 +4,7 @@ import re
 from enum import IntEnum
 from functools import partial
 
-from PySide2.QtWidgets import QMainWindow, QPushButton, QWidget
+from PySide2.QtWidgets import QMainWindow, QMessageBox, QPushButton, QWidget
 
 from pywordle.logic import db_manager
 from pywordle.model.models import Word
@@ -32,6 +32,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if self.random_word is None:
             raise ValueError("No word in database found.")
 
+        print("Random word:", self.random_word.word)
+
         self._current_run = 1
         self._input_rows = {
             1: self.frame_run_1,
@@ -44,41 +46,83 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         self._current_row = self._input_rows[self._current_run]
         self._current_field = self._get_first_or_selected_input_field()
-        self._current_field.setFocus()
 
         # connections
-        self.pushButton_1_1.clicked.connect(  # pylint: disable=no-member
-            self._update_current_field
-        )
-        self.pushButton_1_2.clicked.connect(  # pylint: disable=no-member
-            self._update_current_field
-        )
-        self.pushButton_1_3.clicked.connect(  # pylint: disable=no-member
-            self._update_current_field
-        )
-        self.pushButton_1_4.clicked.connect(  # pylint: disable=no-member
-            self._update_current_field
-        )
-        self.pushButton_1_5.clicked.connect(  # pylint: disable=no-member
-            self._update_current_field
-        )
+        for frame in self._input_rows.values():
+            for child in frame.children():
+                if isinstance(child, QPushButton):
+                    child.clicked.connect(  # pylint: disable=no-member
+                        self._update_current_field
+                    )
 
-        self.pushButton_DEL.clicked.connect(  # pylint: disable=no-member
-            self._delete_and_update_field
-        )
+        for child in self.frame_inputs.children():
+            if isinstance(child, QPushButton):
+                input_letter = child.text()
 
-        self.pushButton_A.clicked.connect(  # pylint: disable=no-member
-            partial(self._set_field_value, "A")
-        )
+                if input_letter == "DEL":
+                    child.clicked.connect(  # pylint: disable=no-member
+                        self._delete_and_update_field
+                    )
+                elif input_letter == "SEND":
+                    child.clicked.connect(  # pylint: disable=no-member
+                        self._validate_and_send
+                    )
+                else:
+                    child.clicked.connect(  # pylint: disable=no-member
+                        partial(self._set_field_value, input_letter)
+                    )
+
+    def _validate_and_send(self) -> None:
+        """Validate input row and send if word is exists."""
+
+        word = "".join([field.text() for field in self._get_sorted_input_fields()])
+
+        if db_manager.exist(word):
+            result_list = self.validate_guessing(word)
+            self._colorize_input_row(result_list)
+            all_correct = all(
+                result == GueissingPositionState.CORRECT_POSITION
+                for result in result_list
+            )
+
+            self._select_next_input_row(all_correct)
+        else:
+            self._not_a_word()
+            print("not a word")
+
+    def _colorize_input_row(self, result_list: list[GueissingPositionState]) -> None:
+        input_fields = self._get_sorted_input_fields()
+        colors = {
+            GueissingPositionState.CORRECT_POSITION: "#228B22",  # green
+            GueissingPositionState.EXIST_ON_OTHER_POSITION: "#FFD700",  # yellow/gold
+            GueissingPositionState.DOES_NOT_EXIST: "#a0a0a0",  # gray
+        }
+
+        for i, field in enumerate(input_fields):
+            guessing_state = result_list[i]
+            new_style_sheet = (
+                field.styleSheet()
+                .replace(  # first replace for QPushButton
+                    "background-color: white",
+                    f"background-color: {colors[guessing_state]}",
+                )
+                .replace(  # second replace for QPushButton:focus
+                    "background-color: white",
+                    f"background-color: {colors[guessing_state]}",
+                )
+            )
+            field.setStyleSheet(new_style_sheet)
 
     def _delete_and_update_field(self) -> None:
+        """Clean current focused field and focus field before."""
+
         if self._current_field is None:
             self._current_field = self._get_first_or_selected_input_field(
                 use_reversed=True
             )
 
         self._current_field.setText("")
-        self._select_next_input_field(use_reversed=True)
+        # self._select_next_input_field(use_reversed=True)
 
     def _update_current_field(self) -> None:
         """Is updating the current field."""
@@ -120,6 +164,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         If last field is reached, focus will be removed.
         """
 
+        if self._current_field is None:
+            self._current_field = self._get_first_or_selected_input_field(
+                use_reversed=use_reversed
+            )
+            return
+
         input_fields = self._get_sorted_input_fields(use_reversed=use_reversed)
 
         for input_field in input_fields:
@@ -140,6 +190,46 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if use_reversed is False:
                 self._current_field.clearFocus()
                 self._current_field = None
+
+    def _select_next_input_row(self, guessed: bool) -> None:
+        """Select next row. If last row is reached, switch to game_over state."""
+
+        if guessed:
+            self._game_won()
+            self.close()
+        elif self._current_run == 6:
+            self._game_lost()
+            self.close()
+        else:
+            self._current_run += 1
+            self._current_row.setEnabled(False)
+            self._current_row = self._input_rows[self._current_run]
+            self._current_row.setEnabled(True)
+            self._select_next_input_field()
+
+    def _game_won(self) -> None:
+        """Show game won dialog."""
+
+        msg_box = QMessageBox(self)
+        msg_box.setText("You nailed it<br>Congratulation!")
+        msg_box.setWindowTitle("Congratulation!")
+        msg_box.exec_()
+
+    def _game_lost(self) -> None:
+        """Show game lost dialog."""
+
+        msg_box = QMessageBox(self)
+        msg_box.setText("You loose :(")
+        msg_box.setWindowTitle("Game Over")
+        msg_box.exec_()
+
+    def _not_a_word(self) -> None:
+        """Show not a word dialog."""
+
+        msg_box = QMessageBox(self)
+        msg_box.setText("Not a word!")
+        msg_box.setWindowTitle("Nope")
+        msg_box.exec_()
 
     def _get_first_or_selected_input_field(
         self, use_reversed: bool = False
@@ -199,7 +289,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             other_positions = list(
                 filter(
                     lambda other_position: guessed_positions_states[other_position]
-                    == GueissingPositionState.UNKNOWN,
+                    != GueissingPositionState.CORRECT_POSITION,
                     other_positions,
                 )
             )
