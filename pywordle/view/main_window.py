@@ -100,6 +100,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             print("not a word")
 
     def _colorize_input_row(self, result_list: list[GueissingPositionState]) -> None:
+        """Colorize input row (QFrame) field by filed (QPushButton) by using
+        given result_list.
+
+        :param result_list: A list of Guess States
+        :type result_list: list[GueissingPositionState]
+        """
+
         input_fields = self._get_sorted_input_fields()
         colors = {
             GueissingPositionState.CORRECT_POSITION: "#228B22",  # green
@@ -152,6 +159,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self._select_next_input_field()
 
     def _get_sorted_input_fields(self, use_reversed: bool = False) -> list[QPushButton]:
+        """Return sorted list of QPushButtons in current row (QFrame).
+
+        :param use_reversed:
+        :return: Return fields (QPushButtons) from current row (QFrame) sorted by
+            the object name of the widget.
+        :rtype: list[QPushButton]
+        """
+
         input_fields = [
             child
             for child in self._current_row.children()
@@ -171,6 +186,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         If reversed is False, get next field in right direction,
         if reversed is True, get next field in left direction.
         If last field is reached, focus will be removed.
+
+        :param use_reversed: Flag, if True: input fields (QPushButton) will
+            be sorted/selected in reversed order.
+        :type use_reversed: bool
         """
 
         if self._current_field is None:
@@ -201,7 +220,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self._current_field = None
 
     def _select_next_input_row(self, guessed: bool) -> None:
-        """Select next row. If last row is reached, switch to game_over state."""
+        """Select next row. If last row is reached, switch to game_over state.
+
+        :param guessed: Flag, that marks, that the word is successfully guessed.
+            If true: game won dialog will be shown,
+            if false: game lost dialog will be shown.
+        :type guessed: bool
+        """
 
         if guessed:
             self._game_won()
