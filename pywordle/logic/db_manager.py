@@ -11,13 +11,27 @@ from more_itertools import chunked
 from sqlalchemy import create_engine
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.sql import func
+from sqlalchemy.sql import exists, func
 
 from pywordle import my_globals
 from pywordle.model.models import Word
 
 engine = create_engine(my_globals.DATABASE_URL)
 Session = sessionmaker(engine)
+
+
+def exist(word: str) -> bool:
+    """Check if given word exists in database.
+
+    :param word: The word to check.
+    :return: True, if word exists in database and False, if not.
+    :rtype: bool
+    """
+
+    with Session() as session:
+        word_is_exisiting = session.query(exists().where(Word.word == word)).scalar()
+
+    return word_is_exisiting
 
 
 def add_word(word: str, ignore_unique_constraint_exception: bool = False) -> None:
