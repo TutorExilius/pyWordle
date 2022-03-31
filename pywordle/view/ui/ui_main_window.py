@@ -54,12 +54,12 @@ class Ui_MainWindow(object):
         self.gridLayout_run1.setSpacing(10)
         self.gridLayout_run1.setObjectName(u"gridLayout_run1")
         self.gridLayout_run1.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_10 = QPushButton(self.frame_run_1)
-        self.pushButton_10.setObjectName(u"pushButton_10")
-        self.pushButton_10.setMinimumSize(QSize(60, 60))
-        self.pushButton_10.setMaximumSize(QSize(60, 60))
-        self.pushButton_10.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_10.setStyleSheet(u"QPushButton\n"
+        self.pushButton_1_4 = QPushButton(self.frame_run_1)
+        self.pushButton_1_4.setObjectName(u"pushButton_1_4")
+        self.pushButton_1_4.setMinimumSize(QSize(60, 60))
+        self.pushButton_1_4.setMaximumSize(QSize(60, 60))
+        self.pushButton_1_4.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_1_4.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -74,14 +74,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_run1.addWidget(self.pushButton_10, 0, 3, 1, 1)
+        self.gridLayout_run1.addWidget(self.pushButton_1_4, 0, 3, 1, 1)
 
-        self.pushButton_9 = QPushButton(self.frame_run_1)
-        self.pushButton_9.setObjectName(u"pushButton_9")
-        self.pushButton_9.setMinimumSize(QSize(60, 60))
-        self.pushButton_9.setMaximumSize(QSize(60, 60))
-        self.pushButton_9.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_9.setStyleSheet(u"QPushButton\n"
+        self.pushButton_1_5 = QPushButton(self.frame_run_1)
+        self.pushButton_1_5.setObjectName(u"pushButton_1_5")
+        self.pushButton_1_5.setMinimumSize(QSize(60, 60))
+        self.pushButton_1_5.setMaximumSize(QSize(60, 60))
+        self.pushButton_1_5.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_1_5.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -96,14 +96,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_run1.addWidget(self.pushButton_9, 0, 4, 1, 1)
+        self.gridLayout_run1.addWidget(self.pushButton_1_5, 0, 4, 1, 1)
 
-        self.pushButton_8 = QPushButton(self.frame_run_1)
-        self.pushButton_8.setObjectName(u"pushButton_8")
-        self.pushButton_8.setMinimumSize(QSize(60, 60))
-        self.pushButton_8.setMaximumSize(QSize(60, 60))
-        self.pushButton_8.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_8.setStyleSheet(u"QPushButton\n"
+        self.pushButton_1_1 = QPushButton(self.frame_run_1)
+        self.pushButton_1_1.setObjectName(u"pushButton_1_1")
+        self.pushButton_1_1.setMinimumSize(QSize(60, 60))
+        self.pushButton_1_1.setMaximumSize(QSize(60, 60))
+        self.pushButton_1_1.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_1_1.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -118,14 +118,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_run1.addWidget(self.pushButton_8, 0, 0, 1, 1)
+        self.gridLayout_run1.addWidget(self.pushButton_1_1, 0, 0, 1, 1)
 
-        self.pushButton_2 = QPushButton(self.frame_run_1)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setMinimumSize(QSize(60, 60))
-        self.pushButton_2.setMaximumSize(QSize(60, 60))
-        self.pushButton_2.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_2.setStyleSheet(u"QPushButton\n"
+        self.pushButton_1_2 = QPushButton(self.frame_run_1)
+        self.pushButton_1_2.setObjectName(u"pushButton_1_2")
+        self.pushButton_1_2.setMinimumSize(QSize(60, 60))
+        self.pushButton_1_2.setMaximumSize(QSize(60, 60))
+        self.pushButton_1_2.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_1_2.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -140,14 +140,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_run1.addWidget(self.pushButton_2, 0, 1, 1, 1)
+        self.gridLayout_run1.addWidget(self.pushButton_1_2, 0, 1, 1, 1)
 
-        self.pushButton_7 = QPushButton(self.frame_run_1)
-        self.pushButton_7.setObjectName(u"pushButton_7")
-        self.pushButton_7.setMinimumSize(QSize(60, 60))
-        self.pushButton_7.setMaximumSize(QSize(60, 60))
-        self.pushButton_7.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_7.setStyleSheet(u"QPushButton\n"
+        self.pushButton_1_3 = QPushButton(self.frame_run_1)
+        self.pushButton_1_3.setObjectName(u"pushButton_1_3")
+        self.pushButton_1_3.setMinimumSize(QSize(60, 60))
+        self.pushButton_1_3.setMaximumSize(QSize(60, 60))
+        self.pushButton_1_3.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_1_3.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -162,7 +162,7 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_run1.addWidget(self.pushButton_7, 0, 2, 1, 1)
+        self.gridLayout_run1.addWidget(self.pushButton_1_3, 0, 2, 1, 1)
 
 
         self.verticalLayout_6.addWidget(self.frame_run_1)
@@ -175,12 +175,12 @@ class Ui_MainWindow(object):
         self.gridLayout_run2.setSpacing(10)
         self.gridLayout_run2.setObjectName(u"gridLayout_run2")
         self.gridLayout_run2.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_13 = QPushButton(self.frame_run_2)
-        self.pushButton_13.setObjectName(u"pushButton_13")
-        self.pushButton_13.setMinimumSize(QSize(60, 60))
-        self.pushButton_13.setMaximumSize(QSize(60, 60))
-        self.pushButton_13.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_13.setStyleSheet(u"QPushButton\n"
+        self.pushButton_2_3 = QPushButton(self.frame_run_2)
+        self.pushButton_2_3.setObjectName(u"pushButton_2_3")
+        self.pushButton_2_3.setMinimumSize(QSize(60, 60))
+        self.pushButton_2_3.setMaximumSize(QSize(60, 60))
+        self.pushButton_2_3.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_2_3.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -195,14 +195,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_run2.addWidget(self.pushButton_13, 0, 2, 1, 1)
+        self.gridLayout_run2.addWidget(self.pushButton_2_3, 0, 2, 1, 1)
 
-        self.pushButton_11 = QPushButton(self.frame_run_2)
-        self.pushButton_11.setObjectName(u"pushButton_11")
-        self.pushButton_11.setMinimumSize(QSize(60, 60))
-        self.pushButton_11.setMaximumSize(QSize(60, 60))
-        self.pushButton_11.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_11.setStyleSheet(u"QPushButton\n"
+        self.pushButton_2_4 = QPushButton(self.frame_run_2)
+        self.pushButton_2_4.setObjectName(u"pushButton_2_4")
+        self.pushButton_2_4.setMinimumSize(QSize(60, 60))
+        self.pushButton_2_4.setMaximumSize(QSize(60, 60))
+        self.pushButton_2_4.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_2_4.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -217,14 +217,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_run2.addWidget(self.pushButton_11, 0, 3, 1, 1)
+        self.gridLayout_run2.addWidget(self.pushButton_2_4, 0, 3, 1, 1)
 
-        self.pushButton_14 = QPushButton(self.frame_run_2)
-        self.pushButton_14.setObjectName(u"pushButton_14")
-        self.pushButton_14.setMinimumSize(QSize(60, 60))
-        self.pushButton_14.setMaximumSize(QSize(60, 60))
-        self.pushButton_14.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_14.setStyleSheet(u"QPushButton\n"
+        self.pushButton_2_1 = QPushButton(self.frame_run_2)
+        self.pushButton_2_1.setObjectName(u"pushButton_2_1")
+        self.pushButton_2_1.setMinimumSize(QSize(60, 60))
+        self.pushButton_2_1.setMaximumSize(QSize(60, 60))
+        self.pushButton_2_1.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_2_1.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -239,14 +239,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_run2.addWidget(self.pushButton_14, 0, 0, 1, 1)
+        self.gridLayout_run2.addWidget(self.pushButton_2_1, 0, 0, 1, 1)
 
-        self.pushButton = QPushButton(self.frame_run_2)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setMinimumSize(QSize(60, 60))
-        self.pushButton.setMaximumSize(QSize(60, 60))
-        self.pushButton.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton.setStyleSheet(u"QPushButton\n"
+        self.pushButton_2_5 = QPushButton(self.frame_run_2)
+        self.pushButton_2_5.setObjectName(u"pushButton_2_5")
+        self.pushButton_2_5.setMinimumSize(QSize(60, 60))
+        self.pushButton_2_5.setMaximumSize(QSize(60, 60))
+        self.pushButton_2_5.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_2_5.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -261,14 +261,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_run2.addWidget(self.pushButton, 0, 4, 1, 1)
+        self.gridLayout_run2.addWidget(self.pushButton_2_5, 0, 4, 1, 1)
 
-        self.pushButton_12 = QPushButton(self.frame_run_2)
-        self.pushButton_12.setObjectName(u"pushButton_12")
-        self.pushButton_12.setMinimumSize(QSize(60, 60))
-        self.pushButton_12.setMaximumSize(QSize(60, 60))
-        self.pushButton_12.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_12.setStyleSheet(u"QPushButton\n"
+        self.pushButton_2_2 = QPushButton(self.frame_run_2)
+        self.pushButton_2_2.setObjectName(u"pushButton_2_2")
+        self.pushButton_2_2.setMinimumSize(QSize(60, 60))
+        self.pushButton_2_2.setMaximumSize(QSize(60, 60))
+        self.pushButton_2_2.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_2_2.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -283,7 +283,7 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_run2.addWidget(self.pushButton_12, 0, 1, 1, 1)
+        self.gridLayout_run2.addWidget(self.pushButton_2_2, 0, 1, 1, 1)
 
 
         self.verticalLayout_6.addWidget(self.frame_run_2)
@@ -296,12 +296,12 @@ class Ui_MainWindow(object):
         self.gridLayout.setSpacing(10)
         self.gridLayout.setObjectName(u"gridLayout")
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_17 = QPushButton(self.frame_run_3)
-        self.pushButton_17.setObjectName(u"pushButton_17")
-        self.pushButton_17.setMinimumSize(QSize(60, 60))
-        self.pushButton_17.setMaximumSize(QSize(60, 60))
-        self.pushButton_17.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_17.setStyleSheet(u"QPushButton\n"
+        self.pushButton_3_1 = QPushButton(self.frame_run_3)
+        self.pushButton_3_1.setObjectName(u"pushButton_3_1")
+        self.pushButton_3_1.setMinimumSize(QSize(60, 60))
+        self.pushButton_3_1.setMaximumSize(QSize(60, 60))
+        self.pushButton_3_1.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_3_1.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -316,14 +316,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout.addWidget(self.pushButton_17, 0, 0, 1, 1)
+        self.gridLayout.addWidget(self.pushButton_3_1, 0, 0, 1, 1)
 
-        self.pushButton_16 = QPushButton(self.frame_run_3)
-        self.pushButton_16.setObjectName(u"pushButton_16")
-        self.pushButton_16.setMinimumSize(QSize(60, 60))
-        self.pushButton_16.setMaximumSize(QSize(60, 60))
-        self.pushButton_16.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_16.setStyleSheet(u"QPushButton\n"
+        self.pushButton_3_2 = QPushButton(self.frame_run_3)
+        self.pushButton_3_2.setObjectName(u"pushButton_3_2")
+        self.pushButton_3_2.setMinimumSize(QSize(60, 60))
+        self.pushButton_3_2.setMaximumSize(QSize(60, 60))
+        self.pushButton_3_2.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_3_2.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -338,14 +338,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout.addWidget(self.pushButton_16, 0, 1, 1, 1)
+        self.gridLayout.addWidget(self.pushButton_3_2, 0, 1, 1, 1)
 
-        self.pushButton_18 = QPushButton(self.frame_run_3)
-        self.pushButton_18.setObjectName(u"pushButton_18")
-        self.pushButton_18.setMinimumSize(QSize(60, 60))
-        self.pushButton_18.setMaximumSize(QSize(60, 60))
-        self.pushButton_18.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_18.setStyleSheet(u"QPushButton\n"
+        self.pushButton_3_3 = QPushButton(self.frame_run_3)
+        self.pushButton_3_3.setObjectName(u"pushButton_3_3")
+        self.pushButton_3_3.setMinimumSize(QSize(60, 60))
+        self.pushButton_3_3.setMaximumSize(QSize(60, 60))
+        self.pushButton_3_3.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_3_3.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -360,14 +360,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout.addWidget(self.pushButton_18, 0, 2, 1, 1)
+        self.gridLayout.addWidget(self.pushButton_3_3, 0, 2, 1, 1)
 
-        self.pushButton_3 = QPushButton(self.frame_run_3)
-        self.pushButton_3.setObjectName(u"pushButton_3")
-        self.pushButton_3.setMinimumSize(QSize(60, 60))
-        self.pushButton_3.setMaximumSize(QSize(60, 60))
-        self.pushButton_3.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_3.setStyleSheet(u"QPushButton\n"
+        self.pushButton_3_4 = QPushButton(self.frame_run_3)
+        self.pushButton_3_4.setObjectName(u"pushButton_3_4")
+        self.pushButton_3_4.setMinimumSize(QSize(60, 60))
+        self.pushButton_3_4.setMaximumSize(QSize(60, 60))
+        self.pushButton_3_4.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_3_4.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -382,14 +382,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout.addWidget(self.pushButton_3, 0, 3, 1, 1)
+        self.gridLayout.addWidget(self.pushButton_3_4, 0, 3, 1, 1)
 
-        self.pushButton_15 = QPushButton(self.frame_run_3)
-        self.pushButton_15.setObjectName(u"pushButton_15")
-        self.pushButton_15.setMinimumSize(QSize(60, 60))
-        self.pushButton_15.setMaximumSize(QSize(60, 60))
-        self.pushButton_15.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_15.setStyleSheet(u"QPushButton\n"
+        self.pushButton_3_5 = QPushButton(self.frame_run_3)
+        self.pushButton_3_5.setObjectName(u"pushButton_3_5")
+        self.pushButton_3_5.setMinimumSize(QSize(60, 60))
+        self.pushButton_3_5.setMaximumSize(QSize(60, 60))
+        self.pushButton_3_5.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_3_5.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -404,7 +404,7 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout.addWidget(self.pushButton_15, 0, 4, 1, 1)
+        self.gridLayout.addWidget(self.pushButton_3_5, 0, 4, 1, 1)
 
 
         self.verticalLayout_6.addWidget(self.frame_run_3)
@@ -417,12 +417,12 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setSpacing(10)
         self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_20 = QPushButton(self.frame_run_4)
-        self.pushButton_20.setObjectName(u"pushButton_20")
-        self.pushButton_20.setMinimumSize(QSize(60, 60))
-        self.pushButton_20.setMaximumSize(QSize(60, 60))
-        self.pushButton_20.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_20.setStyleSheet(u"QPushButton\n"
+        self.pushButton_4_4 = QPushButton(self.frame_run_4)
+        self.pushButton_4_4.setObjectName(u"pushButton_4_4")
+        self.pushButton_4_4.setMinimumSize(QSize(60, 60))
+        self.pushButton_4_4.setMaximumSize(QSize(60, 60))
+        self.pushButton_4_4.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_4_4.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -437,14 +437,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_2.addWidget(self.pushButton_20, 0, 3, 1, 1)
+        self.gridLayout_2.addWidget(self.pushButton_4_4, 0, 3, 1, 1)
 
-        self.pushButton_22 = QPushButton(self.frame_run_4)
-        self.pushButton_22.setObjectName(u"pushButton_22")
-        self.pushButton_22.setMinimumSize(QSize(60, 60))
-        self.pushButton_22.setMaximumSize(QSize(60, 60))
-        self.pushButton_22.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_22.setStyleSheet(u"QPushButton\n"
+        self.pushButton_4_3 = QPushButton(self.frame_run_4)
+        self.pushButton_4_3.setObjectName(u"pushButton_4_3")
+        self.pushButton_4_3.setMinimumSize(QSize(60, 60))
+        self.pushButton_4_3.setMaximumSize(QSize(60, 60))
+        self.pushButton_4_3.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_4_3.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -459,14 +459,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_2.addWidget(self.pushButton_22, 0, 2, 1, 1)
+        self.gridLayout_2.addWidget(self.pushButton_4_3, 0, 2, 1, 1)
 
-        self.pushButton_4 = QPushButton(self.frame_run_4)
-        self.pushButton_4.setObjectName(u"pushButton_4")
-        self.pushButton_4.setMinimumSize(QSize(60, 60))
-        self.pushButton_4.setMaximumSize(QSize(60, 60))
-        self.pushButton_4.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_4.setStyleSheet(u"QPushButton\n"
+        self.pushButton_4_1 = QPushButton(self.frame_run_4)
+        self.pushButton_4_1.setObjectName(u"pushButton_4_1")
+        self.pushButton_4_1.setMinimumSize(QSize(60, 60))
+        self.pushButton_4_1.setMaximumSize(QSize(60, 60))
+        self.pushButton_4_1.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_4_1.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -481,14 +481,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_2.addWidget(self.pushButton_4, 0, 0, 1, 1)
+        self.gridLayout_2.addWidget(self.pushButton_4_1, 0, 0, 1, 1)
 
-        self.pushButton_21 = QPushButton(self.frame_run_4)
-        self.pushButton_21.setObjectName(u"pushButton_21")
-        self.pushButton_21.setMinimumSize(QSize(60, 60))
-        self.pushButton_21.setMaximumSize(QSize(60, 60))
-        self.pushButton_21.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_21.setStyleSheet(u"QPushButton\n"
+        self.pushButton_4_2 = QPushButton(self.frame_run_4)
+        self.pushButton_4_2.setObjectName(u"pushButton_4_2")
+        self.pushButton_4_2.setMinimumSize(QSize(60, 60))
+        self.pushButton_4_2.setMaximumSize(QSize(60, 60))
+        self.pushButton_4_2.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_4_2.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -503,14 +503,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_2.addWidget(self.pushButton_21, 0, 1, 1, 1)
+        self.gridLayout_2.addWidget(self.pushButton_4_2, 0, 1, 1, 1)
 
-        self.pushButton_19 = QPushButton(self.frame_run_4)
-        self.pushButton_19.setObjectName(u"pushButton_19")
-        self.pushButton_19.setMinimumSize(QSize(60, 60))
-        self.pushButton_19.setMaximumSize(QSize(60, 60))
-        self.pushButton_19.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_19.setStyleSheet(u"QPushButton\n"
+        self.pushButton_4_5 = QPushButton(self.frame_run_4)
+        self.pushButton_4_5.setObjectName(u"pushButton_4_5")
+        self.pushButton_4_5.setMinimumSize(QSize(60, 60))
+        self.pushButton_4_5.setMaximumSize(QSize(60, 60))
+        self.pushButton_4_5.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_4_5.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -525,7 +525,7 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_2.addWidget(self.pushButton_19, 0, 4, 1, 1)
+        self.gridLayout_2.addWidget(self.pushButton_4_5, 0, 4, 1, 1)
 
 
         self.verticalLayout_6.addWidget(self.frame_run_4)
@@ -538,12 +538,12 @@ class Ui_MainWindow(object):
         self.gridLayout_3.setSpacing(10)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_23 = QPushButton(self.frame_run_5)
-        self.pushButton_23.setObjectName(u"pushButton_23")
-        self.pushButton_23.setMinimumSize(QSize(60, 60))
-        self.pushButton_23.setMaximumSize(QSize(60, 60))
-        self.pushButton_23.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_23.setStyleSheet(u"QPushButton\n"
+        self.pushButton_5_3 = QPushButton(self.frame_run_5)
+        self.pushButton_5_3.setObjectName(u"pushButton_5_3")
+        self.pushButton_5_3.setMinimumSize(QSize(60, 60))
+        self.pushButton_5_3.setMaximumSize(QSize(60, 60))
+        self.pushButton_5_3.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_5_3.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -558,14 +558,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_3.addWidget(self.pushButton_23, 0, 2, 1, 1)
+        self.gridLayout_3.addWidget(self.pushButton_5_3, 0, 2, 1, 1)
 
-        self.pushButton_25 = QPushButton(self.frame_run_5)
-        self.pushButton_25.setObjectName(u"pushButton_25")
-        self.pushButton_25.setMinimumSize(QSize(60, 60))
-        self.pushButton_25.setMaximumSize(QSize(60, 60))
-        self.pushButton_25.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_25.setStyleSheet(u"QPushButton\n"
+        self.pushButton_5_4 = QPushButton(self.frame_run_5)
+        self.pushButton_5_4.setObjectName(u"pushButton_5_4")
+        self.pushButton_5_4.setMinimumSize(QSize(60, 60))
+        self.pushButton_5_4.setMaximumSize(QSize(60, 60))
+        self.pushButton_5_4.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_5_4.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -580,14 +580,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_3.addWidget(self.pushButton_25, 0, 3, 1, 1)
+        self.gridLayout_3.addWidget(self.pushButton_5_4, 0, 3, 1, 1)
 
-        self.pushButton_24 = QPushButton(self.frame_run_5)
-        self.pushButton_24.setObjectName(u"pushButton_24")
-        self.pushButton_24.setMinimumSize(QSize(60, 60))
-        self.pushButton_24.setMaximumSize(QSize(60, 60))
-        self.pushButton_24.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_24.setStyleSheet(u"QPushButton\n"
+        self.pushButton_5_1 = QPushButton(self.frame_run_5)
+        self.pushButton_5_1.setObjectName(u"pushButton_5_1")
+        self.pushButton_5_1.setMinimumSize(QSize(60, 60))
+        self.pushButton_5_1.setMaximumSize(QSize(60, 60))
+        self.pushButton_5_1.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_5_1.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -602,14 +602,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_3.addWidget(self.pushButton_24, 0, 0, 1, 1)
+        self.gridLayout_3.addWidget(self.pushButton_5_1, 0, 0, 1, 1)
 
-        self.pushButton_26 = QPushButton(self.frame_run_5)
-        self.pushButton_26.setObjectName(u"pushButton_26")
-        self.pushButton_26.setMinimumSize(QSize(60, 60))
-        self.pushButton_26.setMaximumSize(QSize(60, 60))
-        self.pushButton_26.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_26.setStyleSheet(u"QPushButton\n"
+        self.pushButton_5_5 = QPushButton(self.frame_run_5)
+        self.pushButton_5_5.setObjectName(u"pushButton_5_5")
+        self.pushButton_5_5.setMinimumSize(QSize(60, 60))
+        self.pushButton_5_5.setMaximumSize(QSize(60, 60))
+        self.pushButton_5_5.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_5_5.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -624,14 +624,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_3.addWidget(self.pushButton_26, 0, 4, 1, 1)
+        self.gridLayout_3.addWidget(self.pushButton_5_5, 0, 4, 1, 1)
 
-        self.pushButton_5 = QPushButton(self.frame_run_5)
-        self.pushButton_5.setObjectName(u"pushButton_5")
-        self.pushButton_5.setMinimumSize(QSize(60, 60))
-        self.pushButton_5.setMaximumSize(QSize(60, 60))
-        self.pushButton_5.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_5.setStyleSheet(u"QPushButton\n"
+        self.pushButton_5_2 = QPushButton(self.frame_run_5)
+        self.pushButton_5_2.setObjectName(u"pushButton_5_2")
+        self.pushButton_5_2.setMinimumSize(QSize(60, 60))
+        self.pushButton_5_2.setMaximumSize(QSize(60, 60))
+        self.pushButton_5_2.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_5_2.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -646,7 +646,7 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_3.addWidget(self.pushButton_5, 0, 1, 1, 1)
+        self.gridLayout_3.addWidget(self.pushButton_5_2, 0, 1, 1, 1)
 
 
         self.verticalLayout_6.addWidget(self.frame_run_5)
@@ -659,12 +659,12 @@ class Ui_MainWindow(object):
         self.gridLayout_4.setSpacing(10)
         self.gridLayout_4.setObjectName(u"gridLayout_4")
         self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.pushButton_29 = QPushButton(self.frame_run_6)
-        self.pushButton_29.setObjectName(u"pushButton_29")
-        self.pushButton_29.setMinimumSize(QSize(60, 60))
-        self.pushButton_29.setMaximumSize(QSize(60, 60))
-        self.pushButton_29.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_29.setStyleSheet(u"QPushButton\n"
+        self.pushButton_6_1 = QPushButton(self.frame_run_6)
+        self.pushButton_6_1.setObjectName(u"pushButton_6_1")
+        self.pushButton_6_1.setMinimumSize(QSize(60, 60))
+        self.pushButton_6_1.setMaximumSize(QSize(60, 60))
+        self.pushButton_6_1.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_6_1.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -679,14 +679,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_4.addWidget(self.pushButton_29, 0, 0, 1, 1)
+        self.gridLayout_4.addWidget(self.pushButton_6_1, 0, 0, 1, 1)
 
-        self.pushButton_28 = QPushButton(self.frame_run_6)
-        self.pushButton_28.setObjectName(u"pushButton_28")
-        self.pushButton_28.setMinimumSize(QSize(60, 60))
-        self.pushButton_28.setMaximumSize(QSize(60, 60))
-        self.pushButton_28.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_28.setStyleSheet(u"QPushButton\n"
+        self.pushButton_6_5 = QPushButton(self.frame_run_6)
+        self.pushButton_6_5.setObjectName(u"pushButton_6_5")
+        self.pushButton_6_5.setMinimumSize(QSize(60, 60))
+        self.pushButton_6_5.setMaximumSize(QSize(60, 60))
+        self.pushButton_6_5.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_6_5.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -701,14 +701,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_4.addWidget(self.pushButton_28, 0, 4, 1, 1)
+        self.gridLayout_4.addWidget(self.pushButton_6_5, 0, 4, 1, 1)
 
-        self.pushButton_27 = QPushButton(self.frame_run_6)
-        self.pushButton_27.setObjectName(u"pushButton_27")
-        self.pushButton_27.setMinimumSize(QSize(60, 60))
-        self.pushButton_27.setMaximumSize(QSize(60, 60))
-        self.pushButton_27.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_27.setStyleSheet(u"QPushButton\n"
+        self.pushButton_6_4 = QPushButton(self.frame_run_6)
+        self.pushButton_6_4.setObjectName(u"pushButton_6_4")
+        self.pushButton_6_4.setMinimumSize(QSize(60, 60))
+        self.pushButton_6_4.setMaximumSize(QSize(60, 60))
+        self.pushButton_6_4.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_6_4.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -723,14 +723,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_4.addWidget(self.pushButton_27, 0, 3, 1, 1)
+        self.gridLayout_4.addWidget(self.pushButton_6_4, 0, 3, 1, 1)
 
-        self.pushButton_6 = QPushButton(self.frame_run_6)
-        self.pushButton_6.setObjectName(u"pushButton_6")
-        self.pushButton_6.setMinimumSize(QSize(60, 60))
-        self.pushButton_6.setMaximumSize(QSize(60, 60))
-        self.pushButton_6.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_6.setStyleSheet(u"QPushButton\n"
+        self.pushButton_6_3 = QPushButton(self.frame_run_6)
+        self.pushButton_6_3.setObjectName(u"pushButton_6_3")
+        self.pushButton_6_3.setMinimumSize(QSize(60, 60))
+        self.pushButton_6_3.setMaximumSize(QSize(60, 60))
+        self.pushButton_6_3.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_6_3.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -745,14 +745,14 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_4.addWidget(self.pushButton_6, 0, 2, 1, 1)
+        self.gridLayout_4.addWidget(self.pushButton_6_3, 0, 2, 1, 1)
 
-        self.pushButton_30 = QPushButton(self.frame_run_6)
-        self.pushButton_30.setObjectName(u"pushButton_30")
-        self.pushButton_30.setMinimumSize(QSize(60, 60))
-        self.pushButton_30.setMaximumSize(QSize(60, 60))
-        self.pushButton_30.setFocusPolicy(Qt.ClickFocus)
-        self.pushButton_30.setStyleSheet(u"QPushButton\n"
+        self.pushButton_6_2 = QPushButton(self.frame_run_6)
+        self.pushButton_6_2.setObjectName(u"pushButton_6_2")
+        self.pushButton_6_2.setMinimumSize(QSize(60, 60))
+        self.pushButton_6_2.setMaximumSize(QSize(60, 60))
+        self.pushButton_6_2.setFocusPolicy(Qt.ClickFocus)
+        self.pushButton_6_2.setStyleSheet(u"QPushButton\n"
 "{\n"
 "background-color: #fdfdfd;\n"
 "color: black;\n"
@@ -767,7 +767,7 @@ class Ui_MainWindow(object):
 "border: 2px solid black;\n"
 "}")
 
-        self.gridLayout_4.addWidget(self.pushButton_30, 0, 1, 1, 1)
+        self.gridLayout_4.addWidget(self.pushButton_6_2, 0, 1, 1, 1)
 
 
         self.verticalLayout_6.addWidget(self.frame_run_6)
@@ -1446,16 +1446,16 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"pyWordle", None))
         self.action_Close.setText(QCoreApplication.translate("MainWindow", u"&Close", None))
         self.actionAbout_Qt.setText(QCoreApplication.translate("MainWindow", u"About &Qt", None))
-        self.pushButton_10.setText("")
-        self.pushButton_9.setText("")
-        self.pushButton_8.setText("")
-        self.pushButton_2.setText("")
-        self.pushButton_7.setText("")
-        self.pushButton_13.setText("")
-        self.pushButton_11.setText("")
-        self.pushButton_14.setText("")
+        self.pushButton_1_4.setText("")
+        self.pushButton_1_5.setText("")
+        self.pushButton_1_1.setText("")
+        self.pushButton_1_2.setText("")
+        self.pushButton_1_3.setText("")
+        self.pushButton_2_3.setText("")
+        self.pushButton_2_4.setText("")
+        self.pushButton_2_1.setText("")
 #if QT_CONFIG(whatsthis)
-        self.pushButton.setWhatsThis(QCoreApplication.translate("MainWindow", u"QPushButton\n"
+        self.pushButton_2_5.setWhatsThis(QCoreApplication.translate("MainWindow", u"QPushButton\n"
 "{\n"
 "background-color: white;\n"
 "color: black;\n"
@@ -1463,28 +1463,28 @@ class Ui_MainWindow(object):
 "border-radius: 6px;\n"
 "}", None))
 #endif // QT_CONFIG(whatsthis)
-        self.pushButton.setText("")
-        self.pushButton_12.setText("")
-        self.pushButton_17.setText("")
-        self.pushButton_16.setText("")
-        self.pushButton_18.setText("")
-        self.pushButton_3.setText("")
-        self.pushButton_15.setText("")
-        self.pushButton_20.setText("")
-        self.pushButton_22.setText("")
-        self.pushButton_4.setText("")
-        self.pushButton_21.setText("")
-        self.pushButton_19.setText("")
-        self.pushButton_23.setText("")
-        self.pushButton_25.setText("")
-        self.pushButton_24.setText("")
-        self.pushButton_26.setText("")
-        self.pushButton_5.setText("")
-        self.pushButton_29.setText("")
-        self.pushButton_28.setText("")
-        self.pushButton_27.setText("")
-        self.pushButton_6.setText("")
-        self.pushButton_30.setText("")
+        self.pushButton_2_5.setText("")
+        self.pushButton_2_2.setText("")
+        self.pushButton_3_1.setText("")
+        self.pushButton_3_2.setText("")
+        self.pushButton_3_3.setText("")
+        self.pushButton_3_4.setText("")
+        self.pushButton_3_5.setText("")
+        self.pushButton_4_4.setText("")
+        self.pushButton_4_3.setText("")
+        self.pushButton_4_1.setText("")
+        self.pushButton_4_2.setText("")
+        self.pushButton_4_5.setText("")
+        self.pushButton_5_3.setText("")
+        self.pushButton_5_4.setText("")
+        self.pushButton_5_1.setText("")
+        self.pushButton_5_5.setText("")
+        self.pushButton_5_2.setText("")
+        self.pushButton_6_1.setText("")
+        self.pushButton_6_5.setText("")
+        self.pushButton_6_4.setText("")
+        self.pushButton_6_3.setText("")
+        self.pushButton_6_2.setText("")
         self.pushButton_Q.setText(QCoreApplication.translate("MainWindow", u"Q", None))
         self.pushButton_W.setText(QCoreApplication.translate("MainWindow", u"W", None))
         self.pushButton_E.setText(QCoreApplication.translate("MainWindow", u"E", None))

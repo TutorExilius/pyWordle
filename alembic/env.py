@@ -2,8 +2,10 @@ from logging.config import fileConfig
 
 from sqlalchemy import engine_from_config
 from sqlalchemy import pool
-
 from alembic import context
+
+from pywordle.model import models
+from pywordle import globals
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -16,7 +18,6 @@ if config.config_file_name is not None:
 
 # add your model's MetaData object here
 # for 'autogenerate' support
-from pywordle.model import models
 
 target_metadata = models.Base.metadata
 # target_metadata = None
@@ -25,8 +26,6 @@ target_metadata = models.Base.metadata
 # can be acquired:
 # my_important_option = config.get_main_option("my_important_option")
 # ... etc.
-from pywordle import globals
-
 config.set_main_option("sqlalchemy.url", globals.DATABASE_URL)
 
 

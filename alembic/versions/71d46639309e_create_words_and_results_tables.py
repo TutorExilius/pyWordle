@@ -1,9 +1,8 @@
 """create_words_and_results_tables
 
 Revision ID: 71d46639309e
-Revises: 
+Revises:
 Create Date: 2022-03-29 15:45:02.382574
-
 """
 from alembic import op
 import sqlalchemy as sa

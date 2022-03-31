@@ -47,7 +47,7 @@ class Word(BaseModel):  # pylint: disable=too-few-public-methods
         :type value: str
         :return: The validated word(str).
         :rtype: str
-        :raises: ValueError
+        :raise: ValueError
         """
 
         if len(value) != 5:
