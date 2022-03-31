@@ -14,7 +14,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.sql import exists, func
 
 from pywordle import my_globals
-from pywordle.model.models import Word
+from pywordle.model.models import Result, Word
 
 engine = create_engine(my_globals.DATABASE_URL)
 Session = sessionmaker(engine)
@@ -32,6 +32,21 @@ def exist(word: str) -> bool:
         word_is_exisiting = session.query(exists().where(Word.word == word)).scalar()
 
     return word_is_exisiting
+
+
+def add_result(word_id: int, result: Result) -> None:
+    """Add given result to given world and save new result in database.
+
+    :param word_id: ID of the word to save the result in.
+    :type word_id: int
+    :param result: The new result, that shall be saved in database.
+    :type result: Result
+    """
+
+    with Session() as session:
+        word = session.query(Word).get(word_id)
+        word.results.append(result)
+        session.commit()
 
 
 def add_word(word: str, ignore_unique_constraint_exception: bool = False) -> None:

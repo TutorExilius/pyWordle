@@ -10,7 +10,7 @@ from PySide2.QtWidgets import QMainWindow, QMessageBox, QPushButton, QWidget
 
 from pywordle.logic import db_manager
 from pywordle.logic.helper import get_app_version
-from pywordle.model.models import Word
+from pywordle.model.models import Result, Word
 from pywordle.my_globals import WORKING_DIR
 from pywordle.view.ui.ui_main_window import Ui_MainWindow
 
@@ -39,7 +39,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         if self.random_word is None:
             raise ValueError("No word in database found.")
 
-        # print("Random word:", self.random_word.word)
+        print("Random word:", self.random_word.word)
 
         self._current_run = 1
         self._input_rows = {
@@ -294,18 +294,38 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         :type guessed: bool
         """
 
+        finished = False
+
         if guessed:
             self._game_won()
-            self.close()
+            finished = True
         elif self._current_run == 6:
             self._game_lost()
-            self.close()
+            finished = True
         else:
             self._current_run += 1
             self._current_row.setEnabled(False)
             self._current_row = self._input_rows[self._current_run]
             self._current_row.setEnabled(True)
             self._select_next_input_field()
+
+        if finished:
+            self._safe_results()
+            self.close()
+
+    def _safe_results(self) -> None:
+        """Safe current word with not guessed state or passes needed.
+
+        :raise: ValueError
+        """
+
+        runs = None if self._current_run == 6 else self._current_run
+        result = Result(guessed_in_run=runs)
+
+        if self.random_word is not None:
+            db_manager.add_result(self.random_word.id, result)
+        else:
+            raise ValueError("Word is None.")
 
     def _game_won(self) -> None:
         """Show game won dialog."""
