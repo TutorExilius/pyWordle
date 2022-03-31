@@ -37,3 +37,13 @@ def get_app_major_version(working_dir: Path) -> str:
     """
 
     return get_app_version(working_dir).split(".")[0]
+
+
+def upper(word: str) -> str:
+    """Upper given word and replace 'ß' to 'ẞ' if exist.
+
+    :param word: The word to upper.
+    :return: The uppered word.
+    :rtype: str
+    """
+    return word.replace("ß", "ẞ").upper()
