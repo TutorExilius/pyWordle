@@ -6,6 +6,7 @@ from asyncqt import QEventLoop
 
 from pywordle.view.main_window import MainWindow
 
+
 def main():
     app = QApplication(sys.argv)
     loop = QEventLoop(app)
@@ -18,5 +19,5 @@ def main():
         sys.exit(loop.run_forever())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

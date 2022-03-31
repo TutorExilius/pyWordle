@@ -1,7 +1,13 @@
+"""
+Base/abstract class definitions.
+"""
+
 from abc import ABC
 
 
 class NormalizedSet(set[str]):
+    """A specialized set, that normalizes a given lsit of words."""
+
     def __init__(self, word_list: list[str]) -> None:
         super().__init__(NormalizedSet._normalized_list(word_list))
 
@@ -27,10 +33,16 @@ class NormalizedSet(set[str]):
         return word_list_
 
 
-class BaseParser(ABC):
+class BaseParser(ABC):  # pylint: disable=too-few-public-methods
+    """Abstract Parser used as inetrface for all implemented parsers."""
+
     def __init__(self) -> None:
         self.word_list: list[str] = []
 
     @staticmethod
     def get_words() -> NormalizedSet:
+        """Not implemented, interface for concrete parsers.
+
+        :return: Will return normalizes set of words.
+        """
         raise NotImplementedError()

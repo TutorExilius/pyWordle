@@ -4,7 +4,7 @@ from pywordle.logic.word_lists_parser.word_list_1 import WordList1Parser
 
 
 def upper(word):
-    return word.replace('ß', 'ẞ').upper()
+    return word.replace("ß", "ẞ").upper()
 
 
 german_nouns = WordList1Parser.get_words() | NounsParser.get_words()

@@ -1,7 +1,9 @@
-from sqlalchemy import Boolean, Column, DateTime, Integer, MetaData, String, ForeignKey
-from sqlalchemy.ext.declarative import declarative_base, DeclarativeMeta
-from sqlalchemy.orm import relationship
-from sqlalchemy.orm import validates
+"""SQLAlchemy database models"""
+
+from sqlalchemy import (Boolean, Column, DateTime, ForeignKey, Integer,
+                        MetaData, String)
+from sqlalchemy.ext.declarative import DeclarativeMeta, declarative_base
+from sqlalchemy.orm import relationship, validates
 from sqlalchemy.sql import func
 
 meta = MetaData(
@@ -17,14 +19,18 @@ meta = MetaData(
 Base: DeclarativeMeta = declarative_base(metadata=meta)
 
 
-class BaseModel(Base):
+class BaseModel(Base):  # pylint: disable=too-few-public-methods
+    """The base model for all SQLAlchemy database models."""
+
     __abstract__ = True
 
     id = Column(Integer, primary_key=True)
     created_at = Column(DateTime, default=func.now())
 
 
-class Word(BaseModel):
+class Word(BaseModel):  # pylint: disable=too-few-public-methods
+    """The Word model"""
+
     __tablename__ = "words"
 
     word = Column(
@@ -34,7 +40,16 @@ class Word(BaseModel):
     )
 
     @validates("word")
-    def validate_word(self, column: str, value: list[str]) -> list[str]:
+    def validate_word(self, _: str, value: str) -> str:  # pylint: disable=no-self-use
+        """Validate the word attribute and check the lenght (len==5 required).
+
+        :param value: The corresponding value of column 'word'.
+        :type value: str
+        :return: The validated word(str).
+        :rtype: str
+        :raises: ValueError
+        """
+
         if len(value) != 5:
             raise ValueError(
                 f"Lenght error - word: '{value}'. The word length must be exact 5!"
@@ -49,7 +64,9 @@ class Word(BaseModel):
     )
 
 
-class Result(BaseModel):
+class Result(BaseModel):  # pylint: disable=too-few-public-methods
+    """The Result model"""
+
     __tablename__ = "results"
 
     word_id = Column(Integer, ForeignKey("words.id", ondelete="cascade"))

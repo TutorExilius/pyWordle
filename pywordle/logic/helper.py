@@ -1,13 +1,22 @@
+"""
+Module with helper functions.
+"""
+
 from pathlib import Path
 
-import pywordle.globals as globals
 import toml
 
 
-def get_app_version() -> str:
-    with open(
-        Path(globals.WORKING_DIR) / "pyproject.toml", encoding="utf8", mode="r"
-    ) as file:
+def get_app_version(working_dir: Path) -> str:
+    """Extract and get the veriosn of the app from pyproject.toml.
+
+    :param working_dir: Path of current working dir.
+    :type: pathlib.Path
+    :return: Version of the app.
+    :rtype: str
+    """
+
+    with open(working_dir / "pyproject.toml", encoding="utf8", mode="r") as file:
         pyproject_file = toml.load(file)
 
     app_version = pyproject_file["tool"]["poetry"]["version"]
@@ -18,5 +27,13 @@ def get_app_version() -> str:
     return app_version
 
 
-def get_app_major_version() -> str:
-    return get_app_version().split(".")[0]
+def get_app_major_version(working_dir: Path) -> str:
+    """Get the major version part.
+
+    :param working_dir: Path of current working dir.
+    :type: pathlib.Path
+    :return: Major version.
+    :rtype: str
+    """
+
+    return get_app_version(working_dir).split(".")[0]

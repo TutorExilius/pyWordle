@@ -1,12 +1,16 @@
+"""The parser for nouns.csv"""
+
 import csv
 from pathlib import Path
 
-from pywordle.globals import WORKING_DIR
+from pywordle.logic.word_lists_parser.base_parser import (BaseParser,
+                                                          NormalizedSet)
+from pywordle.my_globals import WORKING_DIR
 
-from pywordle.logic.word_lists_parser.base_parser import BaseParser, NormalizedSet
 
+class NounsParser(BaseParser):  # pylint: disable=too-few-public-methods
+    """The nouns.csv Parser"""
 
-class NounsParser(BaseParser):
     @staticmethod
     def get_words() -> NormalizedSet:
         file = Path(WORKING_DIR) / "doc" / "word_lists" / "nouns.csv"
