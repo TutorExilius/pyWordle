@@ -5,7 +5,7 @@ from sqlalchemy import pool
 from alembic import context
 
 from pywordle.model import models
-from pywordle import globals
+from pywordle import my_globals
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -26,7 +26,7 @@ target_metadata = models.Base.metadata
 # can be acquired:
 # my_important_option = config.get_main_option("my_important_option")
 # ... etc.
-config.set_main_option("sqlalchemy.url", globals.DATABASE_URL)
+config.set_main_option("sqlalchemy.url", my_globals.DATABASE_URL)
 
 
 def run_migrations_offline():

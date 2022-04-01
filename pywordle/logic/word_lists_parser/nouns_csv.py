@@ -24,7 +24,7 @@ class NounsParser(BaseParser):  # pylint: disable=too-few-public-methods
                 word = row[0]
                 pos = row[1]
 
-                if "Substantiv" in pos:
+                if pos == "Substantiv":
                     german_nouns.append(word)
 
         return NormalizedSet(german_nouns)
