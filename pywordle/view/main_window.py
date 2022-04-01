@@ -24,6 +24,13 @@ class GueissingPositionState(IntEnum):
     DOES_NOT_EXIST = 3
 
 
+COLORS = {
+    GueissingPositionState.CORRECT_POSITION: "#228B22",  # green
+    GueissingPositionState.EXIST_ON_OTHER_POSITION: "#FFD700",  # yellow/gold
+    GueissingPositionState.DOES_NOT_EXIST: "#a0a0a0",  # gray
+}
+
+
 class MainWindow(QMainWindow, Ui_MainWindow):
     """The main window widget."""
 
@@ -101,50 +108,67 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self._not_a_word()
 
     def _colorize_fields(self, result_list: list[GueissingPositionState]) -> None:
-        """Colorize fields like QPushButtons in input rows (QFrame) and
-        input field in keyborad (letters)by using given result_list.
+        """Colorize input fields like QPushButtons in input rows (QFrame).
 
         :param result_list: A list of Guess States
         :type result_list: list[GueissingPositionState]
         """
 
-        input_fields = self._get_sorted_input_fields()
-        colors = {
-            GueissingPositionState.CORRECT_POSITION: "#228B22",  # green
-            GueissingPositionState.EXIST_ON_OTHER_POSITION: "#FFD700",  # yellow/gold
-            GueissingPositionState.DOES_NOT_EXIST: "#a0a0a0",  # gray
-        }
+        random_word = self.random_word.word if self.random_word else ""
+        letter_stack = list(random_word)
 
+        input_fields = self._get_sorted_input_fields()
         guessed_letters = defaultdict(list)
 
         for i, field in enumerate(input_fields):
+            input_letter = field.text()
             guessing_state = result_list[i]
+            new_color = COLORS[guessing_state]
+
+            if input_letter not in letter_stack:
+                new_color = COLORS[GueissingPositionState.DOES_NOT_EXIST]
+
             new_style_sheet = (
                 field.styleSheet()
                 .replace(  # first replace for QPushButton
                     "background-color: white",
-                    f"background-color: {colors[guessing_state]}",
+                    f"background-color: {new_color}",
                 )
                 .replace(  # second replace for QPushButton:focus
                     "background-color: white",
-                    f"background-color: {colors[guessing_state]}",
+                    f"background-color: {new_color}",
                 )
             )
             field.setStyleSheet(new_style_sheet)
-            guessed_letters[field.text()].append(
-                (colors[guessing_state], guessing_state)
+
+            guessed_letters[input_letter].append(
+                (COLORS[guessing_state], guessing_state)
             )
 
+            if input_letter in letter_stack:
+                letter_stack.remove(input_letter)
+
         reduced_guessed_letters = MainWindow._reduce_guessing_states(guessed_letters)
-        yellow = colors[GueissingPositionState.EXIST_ON_OTHER_POSITION]
+        self._colorize_keyboard_fields(reduced_guessed_letters)
+
+    def _colorize_keyboard_fields(
+        self, guessed_letters: dict[str, tuple[str, GueissingPositionState]]
+    ) -> None:
+        """Colorize keyboard fields (QPushButtons).
+
+        :param guessed_letters: A list of Guess States grouped by letters (as dict).
+        :type guessed_letters:  dict[str, tuple[str, GueissingPositionState]]
+        """
+
+        yellow = COLORS[GueissingPositionState.EXIST_ON_OTHER_POSITION]
 
         for child in self.frame_inputs.children():
             if isinstance(child, QPushButton):
                 letter = child.text()
 
-                if letter in reduced_guessed_letters:
-                    color = reduced_guessed_letters[letter][0]
-                    state = reduced_guessed_letters[letter][1]
+                if letter in guessed_letters:
+                    color = guessed_letters[letter][0]
+                    state = guessed_letters[letter][1]
 
                     if state != GueissingPositionState.CORRECT_POSITION:
                         child.setStyleSheet(
