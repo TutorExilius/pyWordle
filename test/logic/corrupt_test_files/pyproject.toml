@@ -1,0 +1,5 @@
+[tool.poetry]
+nae = "TestApp"
+vers = "123"
+desc = "Test Description"
+autho = ["Test Author <test@test_authors.com>"]
