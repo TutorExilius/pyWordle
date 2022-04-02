@@ -5,7 +5,7 @@ Module with helper functions.
 from pathlib import Path
 
 import toml
-from toml import TomlDecodeError
+
 
 def get_app_version(working_dir: Path) -> str:
     """Extract and get the veriosn of the app from pyproject.toml.
