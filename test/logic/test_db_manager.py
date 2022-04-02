@@ -32,3 +32,4 @@ class TestDBManager:
             "pywordle.logic.db_manager.Session"
         ).return_value.__enter__.return_value = session
         assert exist("HUNDI")
+        assert not exist("ABCDE")
