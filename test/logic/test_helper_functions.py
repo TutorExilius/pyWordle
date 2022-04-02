@@ -1,11 +1,15 @@
-import pytest
+"""All tests for helper functions"""
+
 from pathlib import Path
 
+import pytest
+from pywordle.logic.helper import get_app_major_version, get_app_version, upper
 from toml import TomlDecodeError
 
-from pywordle.logic.helper import get_app_version, get_app_major_version, upper
 
 class TestHelperFunctions:
+    """Testclass for helper functions (helper.py)"""
+
     @pytest.mark.dependency()
     def test_get_app_version(self):
         WORKIND_DIR = Path(__file__).parent / "test_files"
@@ -27,5 +31,3 @@ class TestHelperFunctions:
         expected_word = "SPAẞ"
         uppered_word = upper("spaß")
         assert uppered_word == expected_word
-
-
