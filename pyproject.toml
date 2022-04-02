@@ -31,7 +31,7 @@ allow_untyped_calls = true
 
 [tool.poetry]
 name = "pywordle"
-version = "1.0.0"
+version = "1.0.1"
 description = "A wordle clone in Python Qt"
 authors = ["Tutor Exilius <tutorexilius@gmail.com>"]
 
