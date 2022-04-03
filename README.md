@@ -19,6 +19,13 @@ Please adjust after every version change!
 | :---: | :---: |
 | v0.X  | v0.X - current version (v0.1.0) |
 
+## Documentation SPHINX
+1. Create .reStructured Files 
+`sphinx-apidoc -f -o .\doc\source\ .\pywordle\`
+
+2. Create html documentation
+`.\make.bat html`
+
 ## UI-Files
 ### Convert UI in Python:
 Example: `pyside2-uic .\static\main_window.ui > ui_main_window.py`
