@@ -1,3 +1,4 @@
+test
 # pyWordle
 
 ## Database
